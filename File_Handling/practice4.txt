@@ -1,0 +1,3 @@
+The readline() method returns one line from the file.
+You can also specified how many bytes from the line to return, 
+by using the size parameter.
