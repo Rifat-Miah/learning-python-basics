@@ -1,0 +1,4 @@
+In Python, the readlines() method 
+reads all the lines from a text file 
+and returns them as a list of strings, 
+where each list item represents a single line.

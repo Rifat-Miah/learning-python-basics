@@ -1,0 +1,7 @@
+Use shutil.copy() to copy the file content and permission bits.
+Use shutil.copy2() if you also need to preserve file metadata like timestamps.
+
+Choose the method from the shutil module that fits your metadata requirements:
+1. shutil.copy2(src, dst): Recommended. Copies the file content and completely preserves file permissions, modification times, and access metadata.
+2. shutil.copy(src, dst): Copies the file content and original permission bits, but skips creation or modification timestamps.
+3. shutil.copyfile(src, dst): Copies only the raw binary file contents, discarding all metadata and permissions entirely.
