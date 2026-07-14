@@ -1,0 +1,20 @@
+[
+    {
+        "Id": 1,
+        "First Name": "Rifat",
+        "Last Name": "Miah",
+        "Email": "riaft@gmail.com",
+        "Age": 23,
+        "Gender": "Male",
+        "Date of Birth ": "28 January, 2003"
+    },
+    {
+        "Id": 2,
+        "First Name": "Rony",
+        "Last Name": "Khan",
+        "Email": "ronyt@gmail.com",
+        "Age": 33,
+        "Gender": "Male",
+        "Date of Birth ": "16 June, 2003"
+    }
+]
