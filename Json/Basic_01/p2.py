@@ -20,5 +20,5 @@ Student = '''{
     "Age": 23, 
     "CGPA": 3.50
 } '''
-data = json.loads(Student)
+data = json.loads(Student)  # json.loads() is used when you have a JSON string. so we use dict '''{  }'''
 print("Age =", data["Age"])
