@@ -1,0 +1,28 @@
+{
+    "names": [
+        {
+            "firstname": "Rifat",
+            "age": 23
+        },
+        {
+            "firstname": "Rana",
+            "age": 25
+        },
+        {
+            "firstname": "Rony",
+            "age": 32
+        },
+        {
+            "firstname": "Nahid",
+            "age": 45
+        },
+        {
+            "firstname": "Jahid",
+            "age": 15
+        },
+        {
+            "firstname": "Nahid",
+            "age": 45
+        }
+    ]
+}
