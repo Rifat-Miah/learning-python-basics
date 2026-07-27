@@ -7,7 +7,8 @@ def Choice():
     print("(1) View Data")
     print("(2) Add Data")
     print("(3) Delete Data")
-    print("(4) Exit...")
+    print("(4) Edit Data")
+    print("(5) Exit...")
 
 def view_data():
     with open (filename, "r") as f:
@@ -61,6 +62,36 @@ def delete_data():
     with open(filename, "w") as f:
         json.dump(new_data, f, indent=4)
 
+def edit_data():
+    view_data()
+    new_data = []
+    with open(filename, "r") as f:
+        temp = json.load(f)
+        data_length = len(temp) - 1
+    print(f"Which index number you want to edit?")
+    edit_option = input(f"Enter a number (0 - {data_length}) : ")
+    i = 0
+    for entry in temp:
+        if i == int(edit_option):
+            name = entry["name"]
+            begin = entry["begin"]
+            end = entry["end"]
+
+            print(f"Current Name is : {name}")
+            name = input("Enter new name that you want : ")
+            print(f"Current Begin is : {begin}")
+            begin = input("Enter new Begin that you want : ")
+            print(f"Current End is : {end}")
+            end = input("Enter new name that you want : ")
+
+            new_data.append({"name": name, "begin": begin, "end": end})
+            i = i+1
+        else:
+            new_data.append(entry)
+            i = i+1
+    with open(filename, "w") as f:
+        json.dump(new_data, f, indent=4)
+
 while True:
     Choice()
     Choice = input("\n Enter Number: ")
@@ -71,7 +102,8 @@ while True:
     elif Choice == "3":
         delete_data()
     elif Choice == "4":
+        edit_data()
+    elif Choice == "5":
         break
     else:
         print("You did not select a number. Please read more carefully.")
-        
